@@ -41,9 +41,22 @@ This project demonstrates full-stack JavaScript development, RESTful API integra
 3. The backend processes requests and interacts with MongoDB.
 4. The application supports creating, retrieving, updating, and deleting blog posts.
 
-## Live Demo
+## Frontend Deployment Status
 
-[View Blog Application](https://sardarmrashed.github.io/fullstack-blog)
+**Unresolved as of October 20, 2026:** the repository contains conflicting frontend deployment signals. No single supported frontend deployment or canonical live URL has been confirmed.
+
+| Evidence | Current value | What it establishes |
+| --- | --- | --- |
+| Repository homepage | https://fullstack-blog-iota-black.vercel.app | A Vercel URL is advertised in repository metadata. |
+| Latest inspected `main` commit | `5dc045d3120628459c01a54fc2886193a512ca80` | GitHub reports a successful Vercel deployment on October 17, 2026, for the `fullstack-blog-frontend` project. This does not confirm that the advertised homepage is its current production URL. |
+| Previously advertised README demo | https://sardarmrashed.github.io/fullstack-blog | The README linked to GitHub Pages. This URL is retained here as evidence, not as a verified live demo. |
+| Root and frontend `package.json` | `homepage: https://sardarMrashed.github.io/fullstack-blog-frontend`; `predeploy: npm run build`; `deploy: gh-pages -d build` | Both packages contain GitHub Pages publishing configuration, but their asset base path differs from the README URL. |
+| `gh-pages` branch | `9663f1ebc32b44fc6fa1f467ea8e1dd7ec017b5b`, dated May 5, 2026 | Contains a built frontend whose `index.html` uses `/fullstack-blog/` asset URLs, which also differ from the current package metadata. Branch existence alone does not establish the current Pages publishing source. |
+| Frontend API | https://fullstack-blog-068r.onrender.com/api/posts | `frontend/src/App.js` calls this Render backend. The API address does not determine the frontend host. |
+
+The inspected `main` tree contains no `vercel.json`, tracked `.vercel/` configuration, `CNAME`, or GitHub Actions workflows that resolve this conflict. Repository metadata reports Pages enabled, but the GitHub connector could not read the Pages settings or deployment-history endpoints. Live-site behavior and the Vercel project settings were not verified.
+
+**Configuration preserved:** neither package's homepage, deployment scripts, dependencies, nor the `gh-pages` branch has been changed. Before aligning these values, the maintainer needs to confirm the intended frontend host, its production URL, the Vercel production branch/root directory or Pages publishing branch/directory, and a successful deployment serving this application. Then update this section and the applicable package metadata together.
 
 ## Project Goals
 
