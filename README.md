@@ -43,11 +43,11 @@ This project demonstrates full-stack JavaScript development, RESTful API integra
 
 ## Live Demo
 
-[View Blog Application](https://sardarmrashed.github.io/fullstack-blog)
+[View Blog Application](https://fullstack-blog-iota-black.vercel.app/)
 
-## Project Goals
+## Engineering focus
 
-This project was developed to practice building full-stack JavaScript applications, connecting frontend and backend systems, working with REST APIs, and managing data with MongoDB.
+The code demonstrates client-server integration, REST API endpoints, MongoDB-backed content workflows, and frontend state updates.
 
 ## Developer
 
