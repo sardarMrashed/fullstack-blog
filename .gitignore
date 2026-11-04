@@ -21,3 +21,13 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Prevent credentials and dependency folders anywhere in the repository
+.env
+**/.env
+.env.*
+**/.env.*
+!.env.example
+!**/.env.example
+node_modules/
+**/node_modules/
