@@ -43,7 +43,9 @@ This project demonstrates full-stack JavaScript development, RESTful API integra
 
 ## Live Demo
 
-[View Blog Application](https://fullstack-blog-iota-black.vercel.app/)
+[View Blog Application](https://sardarMrashed.github.io/fullstack-blog/)
+
+Backend API: https://fullstack-blog-068r.onrender.com/api/posts
 
 ## Engineering focus
 
