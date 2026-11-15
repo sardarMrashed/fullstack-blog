@@ -223,4 +223,20 @@ h1 {
 .delete-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(239, 35, 60, 0.4);
+
+  @media (max-width: 600px) {
+    body {
+      padding: 1rem;
+    }
+
+    .form,
+    .post {
+      padding: 1.25rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
 }

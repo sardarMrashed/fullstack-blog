@@ -23,12 +23,10 @@ function App() {
     setTitle('')
     setContent('')
   }
-
   const deletePost = async (id) => {
-    await axios.delete(`${API}/${id}`)
-    setPosts(posts.filter(post => post._id !== id))
-  }
-
+    await axios.delete(`${API}/${id}`);
+    setPosts(posts.filter(post => post._id !== id));
+  };
   const startEdit = (post) => {
     setEditId(post._id)
     setEditTitle(post.title)
@@ -86,7 +84,10 @@ function App() {
                 <p>{post.content}</p>
                 <div className="post-buttons">
                   <button className="edit-btn" onClick={() => startEdit(post)}>Edit</button>
-                  <button className="delete-btn" onClick={() => deletePost(post._id)}>Delete</button>
+                  <button
+                    className="delete-btn"
+                    onClick={() => deletePost(post._id)}
+                  >Delete</button>
                 </div>
               </>
             )}
